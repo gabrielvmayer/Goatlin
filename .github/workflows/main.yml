@@ -1,7 +1,7 @@
 name: CI
 on:
  push:
-   branches: [ main ]
+   branches: [ develop ]
 jobs:
  conviso-ast:
    runs-on: ubuntu-latest
