@@ -6,10 +6,10 @@ jobs:
  conviso-ast:
    runs-on: ubuntu-latest
    container:
-     image: convisoappsec/convisocli:latest
+     image: convisoappsec/convisocli:beta
      env:
        CONVISO_API_KEY: ${{secrets.CONVISO_API_KEY}}
-       CONVISO_COMPANY_ID: 600
+       CONVISO_COMPANY_ID: 652
    steps:
    - uses: actions/checkout@v4
    - name: Run AST
