@@ -6,7 +6,7 @@ jobs:
  conviso-ast:
    runs-on: ubuntu-latest
    container:
-     image: convisoappsec/convisocli:2.1.9 #beta
+     image: convisoappsec/convisocli:beta
      env:
        CONVISO_API_KEY: ${{secrets.CONVISO_API_KEY}}
        CONVISO_COMPANY_ID: 600
