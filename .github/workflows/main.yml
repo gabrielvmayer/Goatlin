@@ -14,4 +14,4 @@ jobs:
    - uses: actions/checkout@v4
    - name: Run AST
      run: |
-          conviso ast run --vulnerability-auto-close
+          conviso sca run --vulnerability-auto-close
