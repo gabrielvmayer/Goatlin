@@ -12,6 +12,6 @@ jobs:
        CONVISO_COMPANY_ID: 600
    steps:
    - uses: actions/checkout@v4
-   - name: Run AST
+   - name: Run SCA
      run: |
-          conviso ast run --vulnerability-auto-close
+          conviso sca run --vulnerability-auto-close
