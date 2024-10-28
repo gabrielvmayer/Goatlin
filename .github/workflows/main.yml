@@ -9,7 +9,7 @@ jobs:
      image: convisoappsec/convisocli:beta
      env:
        CONVISO_API_KEY: ${{secrets.CONVISO_API_KEY}}
-       CONVISO_COMPANY_ID: 652
+       CONVISO_COMPANY_ID: 520
    steps:
    - uses: actions/checkout@v4
    - name: Run SCA
