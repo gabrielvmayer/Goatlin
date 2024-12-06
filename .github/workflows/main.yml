@@ -15,7 +15,7 @@ jobs:
    - name: Run SCA
      run: |
           export DOCKER_BUILDKIT=1
-          export IMAGE_NAME="Goatlin"
+          export IMAGE_NAME="goatlin"
           export IMAGE_TAG="latest"
           docker build -t $IMAGE_NAME:$IMAGE_TAG
           conviso container run "$IMAGE_NAME:$IMAGE_TAG"
