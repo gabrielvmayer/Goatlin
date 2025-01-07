@@ -6,7 +6,7 @@ jobs:
  conviso-ast:
    runs-on: ubuntu-latest
    container:
-     image: convisoappsec/convisocli:beta
+     image: convisoappsec/convisocli:latest
      env:
        CONVISO_API_KEY: ${{secrets.CONVISO_API_KEY}}
        CONVISO_COMPANY_ID: 600
@@ -14,9 +14,8 @@ jobs:
    - uses: actions/checkout@v4
    - name: Run SCA
      run: |
-          conviso ast run --vulnerability-auto-close
           export DOCKER_BUILDKIT=1
           export IMAGE_NAME="goatlin"
           export IMAGE_TAG="latest"
           docker build -t $IMAGE_NAME:$IMAGE_TAG .
-          conviso container run "$IMAGE_NAME:$IMAGE_TAG"
+          conviso container run "$IMAGE_NAME:$IMAGE_TAG" --asset-name "Goatlin"
