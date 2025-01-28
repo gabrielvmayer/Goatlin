@@ -5,3 +5,7 @@ on:
 jobs:
  chamar-conviso-ast:
    uses: gabrielvmayer/central-workflow/.github/workflows/main.yml@main
+   with:
+      CONVISO_ASSET_NAME: 'Goatlin'
+   secrets:
+      CONVISO_COMPANY_ID: ${{ secrets.CONVISO_COMPANY_ID }}
