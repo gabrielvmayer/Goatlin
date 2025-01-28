@@ -8,4 +8,4 @@ jobs:
    with:
       CONVISO_ASSET_NAME: 'Goatlin'
    secrets:
-      CONVISO_COMPANY_ID: ${{ secrets.CONVISO_COMPANY_ID }}
+      CONVISO_API_KEY: ${{ secrets.CONVISO_API_KEY }}
