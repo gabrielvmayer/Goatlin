@@ -2,6 +2,8 @@ name: CI
 on:
  push:
    branches: [ develop ]
+ pull_request:
+   branches: [develop, example]
 jobs:
  chamar-conviso-ast:
    uses: gabrielvmayer/central-workflow/.github/workflows/main.yml@main
