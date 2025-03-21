@@ -8,6 +8,7 @@ const config = require('../config.json');
 const indexRouter = require('./routes/index');
 const accountsRouter = require('./routes/accounts');
 
+const app = express();
 
 app.use(logger('dev'));
 app.use(express.json());
