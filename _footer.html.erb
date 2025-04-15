@@ -3,7 +3,7 @@
     <div style="margin: 30px">
       <table align="center">
         <tr>
-          <td> <img src="<%= @cdn_url.html_safe %>/new_device_for_user/email.png" /> </td>
+          <td> <img src="<%= sanitize(@cdn_url) %>/new_device_for_user/email.png" /> </td>
           <td><strong class="footer__text">ola@vindi.com.br</strong></td>
         </tr>
       </table>
